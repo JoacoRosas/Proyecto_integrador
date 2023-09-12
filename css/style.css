@@ -68,3 +68,53 @@ footer{
 }
 /**FOOTER**/
 
+/**HOME**/
+/* Estilos para los elementos de la clase "padre-articulos" */
+.padre-articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para las secciones con clase "section-home" */
+/* Estilos para las secciones con clase "section-home" */
+.section-home {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 20px; /* Espacio entre las secciones */
+    display: block; /* Hacer que cada sección quede una debajo de la otra */
+}
+
+
+/* Estilos para los títulos con clase "titulo-section" */
+.titulo-section {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para los artículos con clase "article-home" */
+.article-home {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+/* Estilos para las imágenes dentro de los artículos */
+.article-home img {
+    max-width: 100%;
+    height: 300px;
+}
+
+/* Estilos para los títulos dentro de los artículos */
+.article-home h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Estilos para los párrafos dentro de los artículos */
+.article-home p {
+    font-size: 14px;
+    color: #777;
+}
+
