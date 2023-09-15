@@ -42,6 +42,17 @@ header nav li{
     width: 8%;
     margin: 0px 15px;
 }
+
+nav a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; 
+}
+
 /**HEADER**/
 
 /**FOOTER**/
@@ -62,7 +73,7 @@ footer{
     margin: 0px 10px;
     font-family: "Hind siliguri", sans-serif;
     font-size: 18px;
-    color: pink;
+    color: white;
     display: flex;
     align-items: center;
 }
@@ -70,25 +81,33 @@ footer{
 
 /**HOME**/
 /* Estilos para los elementos de la clase "padre-articulos" */
+
 .padre-articulos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    background-color: rgb(103, 93, 103);
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+
+
 }
 
 /* Estilos para las secciones con clase "section-home" */
 /* Estilos para las secciones con clase "section-home" */
 .section-home {
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 33%; 
     margin-bottom: 20px; /* Espacio entre las secciones */
-    display: block; /* Hacer que cada sección quede una debajo de la otra */
+    display: inline; /* Hacer que cada sección quede una debajo de la otra */
 }
 
 
 /* Estilos para los títulos con clase "titulo-section" */
 .titulo-section {
     font-size: 24px;
-    color: #333;
+    color: white;
 }
 
 /* Estilos para los artículos con clase "article-home" */
@@ -97,24 +116,96 @@ footer{
     padding: 20px;
     margin: 10px 0;
     border: 1px solid #ddd;
+    flex-direction: row;
 }
 
 /* Estilos para las imágenes dentro de los artículos */
 .article-home img {
-    max-width: 100%;
+    max-width: 200px;
     height: 300px;
 }
 
-/* Estilos para los títulos dentro de los artículos */
 .article-home h3 {
     font-size: 18px;
     color: #333;
     margin-top: 10px;
 }
-
-/* Estilos para los párrafos dentro de los artículos */
 .article-home p {
     font-size: 14px;
     color: #777;
 }
+/**HOME**/
 
+/**GENEROS**/
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+
+
+/* Estilos para las secciones de categoría */
+.genero-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    background-color: rgb(103, 93, 103);
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.genero-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la lista de categoría */
+.genero-list {
+    list-style: none;
+    padding: 0;
+}
+
+.genero-list li {
+    margin-bottom: 10px;
+}
+
+.genero-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/**GENEROS**/
+
+
+/**FAVORITOS**/
+
+.favorite-section{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    background-color: rgb(103, 93, 103);
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+section img {
+    max-width: 400px;
+    height: 500px;
+}
+
+
+
+/**FAVORITOS(falta igual)**/
+
+/**DETALLE SERIES**/
