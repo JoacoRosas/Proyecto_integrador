@@ -254,7 +254,8 @@ footer{
     padding: 10px;
 
 }
-@media (max-width: 767px) {
+
+@media (max-width: 420px) {
     header {
         padding: 5px;
     }
@@ -269,10 +270,7 @@ footer{
         height: 10%;
         width: 10%;
         margin: 0px 10px;
-    }
-    /* Agrega más estilos según sea necesario */
-    
-    /* Estilos para la sección de películas */
+    } 
     .section-home {
         flex-direction: column;
     }
@@ -283,17 +281,7 @@ footer{
         max-width: 100%;
         height: auto;
     }
-    /* Agrega más estilos según sea necesario */
 }
 
-/* Estilos para pantallas medianas, como tabletas */
-@media (min-width: 768px) and (max-width: 1023px) {
-    /* Estilos específicos para tabletas */
-    /* ... */
-}
 
-/* Estilos para pantallas más grandes, como computadoras de escritorio */
-@media (min-width: 1024px) {
-    /* Estilos específicos para escritorio */
-    /* ... */
-}
+
