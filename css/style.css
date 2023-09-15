@@ -1,9 +1,12 @@
 *{
     box-sizing: border-box;
 }
-body{
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black;
 }
 ul{
     padding: 0px;
@@ -80,36 +83,24 @@ footer{
 /**FOOTER**/
 
 /**HOME**/
-/* Estilos para los elementos de la clase "padre-articulos" */
-
 .padre-articulos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
     background-color: rgb(103, 93, 103);
     margin: 15px;
     border-radius: 15px;
     padding: 10px;
-
-
 }
-
-/* Estilos para las secciones con clase "section-home" */
-.section-home {
-    width: 33%; 
-    margin-bottom: 20px; /* Espacio entre las secciones */
-    display: inline; /* Hacer que cada sección quede una debajo de la otra */
-}
-
-
-/* Estilos para los títulos con clase "titulo-section" */
 .titulo-section {
     font-size: 24px;
     color: white;
 }
+.section-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row; 
+    margin-bottom: 20px; 
+}
 
-/* Estilos para los artículos con clase "article-home" */
 .article-home {
     background-color: #f7f7f7;
     padding: 20px;
@@ -118,7 +109,6 @@ footer{
     flex-direction: row;
 }
 
-/* Estilos para las imágenes dentro de los artículos */
 .article-home img {
     max-width: 200px;
     height: 300px;
@@ -137,17 +127,6 @@ footer{
 
 /**GENEROS**/
 /* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: black;
-}
-
-
-
-/* Estilos para las secciones de categoría */
 .genero-section {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -186,7 +165,53 @@ body {
 
 /**FAVORITOS**/
 
-.favorite-section{
+.padre-articulos-fav {
+    background-color: rgb(103, 93, 103);
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.titulo-section-fav {
+    font-size: 24px;
+    color: white;
+}
+.section-fav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row; 
+    margin-bottom: 20px; 
+}
+
+.article-fav {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    flex-direction: row;
+}
+
+.article-fav img {
+    max-width: 200px;
+    height: 300px;
+}
+
+.article-fav h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+.article-fav p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+/**FAVORITOS(falta igual)**/
+
+/**DETALLE SERIES**/
+
+.section-detalle-serie{
     background-color: #fff;
     border: 1px solid #ddd;
     margin-bottom: 20px;
@@ -198,13 +223,33 @@ body {
     padding: 10px;
 }
 
-section img {
-    max-width: 400px;
-    height: 500px;
+/**DETALLE SERIES**/
+
+/**DETALLE MOVIE**/
+.section-detalle-movie{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    background-color: rgb(103, 93, 103);
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
 }
 
+/**DETALLE MOVIE**/
 
+/**DETALLE GENEROS**/
+.section-detalle-generos{
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
 
-/**FAVORITOS(falta igual)**/
-
-/**DETALLE SERIES**/
+    background-color: rgb(103, 93, 103);
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
