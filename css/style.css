@@ -40,22 +40,19 @@ header nav li{
     margin: 10px;
     color: pink;
 }
-#logotheSS{
+.logotheSS{
     height: 8%;
     width: 8%;
     margin: 0px 15px;
 }
-
 nav a {
     text-decoration: none;
     color: white; 
     font-weight: bold;
 }
-
 nav a:hover {
     text-decoration: underline; 
 }
-
 /**HEADER**/
 
 /**FOOTER**/
@@ -100,7 +97,6 @@ footer{
     flex-direction: row; 
     margin-bottom: 20px; 
 }
-
 .article-home {
     background-color: #f7f7f7;
     padding: 20px;
@@ -108,12 +104,10 @@ footer{
     border: 1px solid #ddd;
     flex-direction: row;
 }
-
 .article-home img {
     max-width: 200px;
     height: 300px;
 }
-
 .article-home h3 {
     font-size: 18px;
     color: #333;
@@ -138,7 +132,6 @@ footer{
     border-radius: 15px;
     padding: 10px;
 }
-
 .genero-section h2 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -149,22 +142,18 @@ footer{
     list-style: none;
     padding: 0;
 }
-
 .genero-list li {
     margin-bottom: 10px;
 }
-
 .genero-list a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-
 /**GENEROS**/
 
 
 /**FAVORITOS**/
-
 .padre-articulos-fav {
     background-color: rgb(103, 93, 103);
     margin: 15px;
@@ -182,7 +171,6 @@ footer{
     flex-direction: row; 
     margin-bottom: 20px; 
 }
-
 .article-fav {
     background-color: #f7f7f7;
     padding: 20px;
@@ -190,12 +178,10 @@ footer{
     border: 1px solid #ddd;
     flex-direction: row;
 }
-
 .article-fav img {
     max-width: 200px;
     height: 300px;
 }
-
 .article-fav h3 {
     font-size: 18px;
     color: #333;
@@ -205,12 +191,9 @@ footer{
     font-size: 14px;
     color: #777;
 }
-
-
 /**FAVORITOS(falta igual)**/
 
 /**DETALLE SERIES**/
-
 .section-detalle-serie{
     background-color: #fff;
     border: 1px solid #ddd;
@@ -222,7 +205,6 @@ footer{
     border-radius: 15px;
     padding: 10px;
 }
-
 /**DETALLE SERIES**/
 
 /**DETALLE MOVIE**/
@@ -237,7 +219,6 @@ footer{
     border-radius: 15px;
     padding: 10px;
 }
-
 /**DETALLE MOVIE**/
 
 /**DETALLE GENEROS**/
@@ -255,6 +236,135 @@ footer{
 
 }
 
+
+.tit-detalle-genero {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.section-detalle-generos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.art-detalle-genero{
+    width: 48%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.art-detalle-genero h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.art-detalle-genero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/**DETALLE GENEROS**/
+
+/**SEARCH-RESULTS**/
+.padre-articulos-search {
+    background-color: rgb(103, 93, 103);
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.titulo-section-search {
+    font-size: 24px;
+    color: white;
+}
+.section-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row; 
+    margin-bottom: 20px; 
+}
+.article-search {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    flex-direction: row;
+}
+.article-search img {
+    max-width: 200px;
+    height: 300px;
+}
+.article-search h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+.article-search p {
+    font-size: 14px;
+    color: #777;
+}
+/**SEARCH-RESULTS**/
+
+/**DETALLE MOVIES **/
+.section-detalle-movie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row; 
+    margin-bottom: 20px; 
+}
+.article-detalle-movie img{
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    flex-direction: row;
+    max-width: 200px;
+    height: 300px;
+}
+.article-detalle-movie h2 {
+    font-size: 24px;
+    color:white;
+}
+/**DETALLE MOVIES **/
+
+/**DETALLE SERIE **/
+.section-detalle-serie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row; 
+    margin-bottom: 20px;  
+}
+.article-detalle-serie img {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    flex-direction: row;
+    max-width: 200px;
+    height: 300px;
+}
+.article-detalle-serie h2 {
+    font-size: 24px;
+    color:white;
+}
+/**DETALLE SERIE **/
+
+/**MEDIA QUERIES**/
 @media (max-width: 420px) {
     header {
         padding: 5px;
@@ -266,7 +376,7 @@ footer{
         font-size: 20px;
         margin: 5px;
     }
-    #logotheSS {
+    .logotheSS {
         height: 10%;
         width: 10%;
         margin: 0px 10px;
@@ -282,6 +392,8 @@ footer{
         height: auto;
     }
 }
+/**MEDIA QUERIES**/
+
 
 
 
