@@ -89,6 +89,7 @@ footer{
 .titulo-section {
     font-size: 24px;
     color: white;
+    margin: 15px;
 }
 .section-home {
     display: flex;
@@ -100,7 +101,7 @@ footer{
 .article-home {
     background-color: #f7f7f7;
     padding: 20px;
-    margin: 10px 0;
+    margin: 10px;
     border: 1px solid #ddd;
     flex-direction: row;
 }
@@ -238,24 +239,24 @@ footer{
 
 
 .tit-detalle-genero {
-    text-align: center;
     font-size: 28px;
-    margin-top: 20px;
+    margin: 15px;
+
 }
 
 .section-detalle-generos {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px;
 }
 
 .art-detalle-genero{
     width: 48%;
     background-color: #fff;
-    margin-bottom: 20px;
+    margin: 15px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -270,13 +271,12 @@ footer{
 .art-detalle-genero img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    margin: 15px;
 }
 
-
-
 /**DETALLE GENEROS**/
+
 
 /**SEARCH-RESULTS**/
 .padre-articulos-search {
@@ -367,19 +367,48 @@ footer{
 /**MEDIA QUERIES**/
 @media (max-width: 420px) {
     header {
-        padding: 5px;
+        flex-direction: column;
+        margin: 0%;
     }
     header nav ul {
-        margin: 0px 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     header nav li {
         font-size: 20px;
         margin: 5px;
     }
     .logotheSS {
-        height: 10%;
-        width: 10%;
-        margin: 0px 10px;
+      width: fit-content;
+    } 
+    .section-home {
+        flex-direction: column;
+    }
+    .article-home {
+        width: 100%;
+    }
+    .article-home img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        margin: 0%;
+    }
+    header nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav li {
+        font-size: 20px;
+        margin: 5px;
+    }
+    .logotheSS {
+      width: fit-content;
     } 
     .section-home {
         flex-direction: column;
