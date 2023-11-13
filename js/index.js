@@ -32,3 +32,12 @@ fetch(`url=${movie}`)
     .catch(function(error){
         console.log("Error: " + error);
     }) 
+
+
+
+//BUSCADOR//
+let formulario = document.querySelector(".formulario")
+let buscador = document.querySelector('[name=buscar]')
+
+formulario.addEventListener('submit', function(e){
+    e.preventDefault()})
