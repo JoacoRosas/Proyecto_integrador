@@ -77,6 +77,13 @@ footer{
     display: flex;
     align-items: center;
 }
+.logo-api{
+    margin:15px;
+    align-items: center;
+    display: flex;
+    width: 150px;
+    align-items: last baseline;
+}
 /**FOOTER**/
 
 /**HOME**/
