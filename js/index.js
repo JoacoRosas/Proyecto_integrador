@@ -1,15 +1,19 @@
-let urlPeliculas = 'url'
+let api_key = "da259f077f66712b0dd2a2dacc20a03d"
 
-fetch(`url=${movie}`)
+let urlPeliculas = `https://api.themoviedb.org/3/movie/popular?api_key=${api_key}`
+
+console.log(urlPeliculas);
+
+
+fetch(urlPeliculas)
     .then(function(response){
         response.json()
     })
     .then(function(data){
         console.log(data);
 
-
         let peliculas = document.querySelector('.lista-peliculas')
-        let arrayPeliculas = data.data //ver//
+        let arrayPeliculas = data.results //ver//
         let peliculasHTML = ''
 
         for(let i = 0; i <arrayPeliculas.length; i++){
@@ -23,10 +27,6 @@ fetch(`url=${movie}`)
             </li>`
         }
         peliculas.innerHTML = peliculasHTML;
-
-
-
-    
     })
 
     .catch(function(error){
@@ -35,9 +35,8 @@ fetch(`url=${movie}`)
 
 
 
-//BUSCADOR//
 let formulario = document.querySelector(".formulario")
 let buscador = document.querySelector('[name=buscar]')
-
+ 
 formulario.addEventListener('submit', function(e){
     e.preventDefault()})
