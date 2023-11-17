@@ -1,7 +1,7 @@
 let queryString = window.location.search
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
-
+console.log(id)
 let acaVaLaAPIKey = "da259f077f66712b0dd2a2dacc20a03d"
 
 let urlDetalleSerie = `https://api.themoviedb.org/3/tv/${id}?api_key=${acaVaLaAPIKey}`
@@ -14,23 +14,26 @@ fetch(urlDetalleSerie)
         console.log(data);
 
         let detalleSerie = document.querySelector(".section-detalle-serie")
-        let arrayDetSerie = data.genres
+        let generos = data.genres
         let detalleSerieHTML = ""
 
-        for(let i = 0; i < arrayDetSerie.length; i++){
-            detalleSerieHTML += `<article class= "detalles-serie-informacion">
-            <img class="detalles-serie-imagen" src= ${data.backdrop_path}>
-            <ul class="detalles-serie-texto" >
-            <li><h2> Nombre: ${data.name}</h2></li>
-            <li><p> Calificación: ${data.popularity}<p></li>
-            <li><p> Fecha de estreno: ${data.first_air_date}<p></li>
-            <li><p> Sinópsis: ${data.overview}<p></li>
-            <li><h3> Genero: <a class="detalles-serie-link" href="detalle-generos.html?id=${data.id}">${data.name}</a></h3></li>
-            </ul>`
+        detalleSerieHTML += `<article class= "detalles-serie-informacion">
+        <img class="detalles-serie-imagen" src= ${data.poster_path}>
+        <ul class="detalles-serie-texto" >
+        <li><h2> Nombre: ${data.name}</h2></li>
+        <li><p> Calificación: ${data.popularity}<p></li>
+        <li><p> Fecha de estreno: ${data.first_air_date}<p></li>
+        <li><p> Sinópsis: ${data.overview}<p></li>
+        <li><h3 id="listaGeneros"> Genero: </h3></li>
+        </ul>`
+        detalleSerie.innerHTML = detalleSerieHTML;
+        let listaGeneros = document.querySelector("#listaGeneros")
+        console.log(listaGeneros)
+        for(let i = 0; i < generos.length; i++){
+            console.log(generos[i]);
+            listaGeneros.innerHTML += `<a class="detalles-serie-link" href="detalle-generos.html?id=${generos[i].id}">${generos[i].name}</a>`
         }
 
-        detalleSerie.innerHTML = detalleSerieHTML;
-        console.log(detalleSerie);
 
     })
     .catch(function (error) {
