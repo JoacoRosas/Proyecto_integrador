@@ -17,20 +17,19 @@ fetch (urlGenerosMovies)
 .then(function(data){
     console.log(data);
 
-    // let generos= document.querySelector (".genero-section");
-    // let arrayGeneros = data.results
-    // let generosHTML= ""
+    let generos= document.querySelector (".genero-section");
+    let arrayGeneros = data.genres
+    let generosHTML= ""
     
-    // for(let i=0;i<arrayGeneros.length;i++){
-    //     generosHTML += `
-    //     <article class= "home-article">
-    //     <a class="link-color" href="detalle-generos.html?id=${arrayGeneros[i].id}">
-    //     <img src= ${arrayGeneros[i].m}>
-    //     <h2 class="home-texto" >${arrayGeneros[i].n}</h2>
-    //     </a>
-    //     </article>`
-    // }
-    // generos.innerHTML=generosHTML
+    for(let i=0;i<arrayGeneros.length;i++){
+         generosHTML += `
+         <article class= "home-article">
+         <a class="link-color" href="detalle-generos.html?id=${arrayGeneros[i].id}">
+         <h2 class="home-texto" >${arrayGeneros[i].name}</h2>
+         </a>
+         </article>`
+     }
+        generos.innerHTML=generosHTML
 })
 
 .catch(function(error){
@@ -46,20 +45,19 @@ fetch (urlGenerosTv)
 .then(function(data){
     console.log(data);
 
-    // let generos= document.querySelector (".genero-section");
-    // let arrayGeneros = data.results
-    // let generosHTML= ""
+    let generos= document.querySelector (".genero-section-tv");
+    let arrayGeneros = data.genres
+    let generosHTML= ""
     
-    // for(let i=0;i<arrayGeneros.length;i++){
-    //     generosHTML += `
-    //     <article class= "home-article">
-    //     <a class="link-color" href="detalle-generos.html?id=${arrayGeneros[i].id}">
-    //     <img src= ${arrayGeneros[i].m}>
-    //     <h2 class="home-texto" >${arrayGeneros[i].n}</h2>
-    //     </a>
-    //     </article>`
-    // }
-    // generos.innerHTML=generosHTML
+    for(let i=0;i<arrayGeneros.length;i++){
+         generosHTML += `
+         <article class= "home-article">
+         <a class="link-color" href="detalle-generos.html?id=${arrayGeneros[i].id}">
+         <h2 class="home-texto" >${arrayGeneros[i].name}</h2>
+         </a>
+         </article>`
+     }
+     generos.innerHTML=generosHTML
 })
 
 .catch(function(error){
