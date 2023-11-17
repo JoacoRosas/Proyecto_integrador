@@ -1,3 +1,7 @@
+let acaVaLaAPIKey = "da259f077f66712b0dd2a2dacc20a03d"
+let urlBuscador = `https://api.themoviedb.org/3/search/movie?api_key=${acaVaLaAPIKey}&query=${buscar}`
+
+
 let queryString = location.search
 let queryStringObj = new URLSearchParams(queryString)
 let busqueda = queryStringObj.get("buscar")
@@ -8,7 +12,7 @@ let titulo = document.querySelector('.titulo-busqueda')
 titulo.innerHTML += buscar
 
 
-fetch(`url`)
+fetch(urlBuscador)
     .then(function(response){
         response.json()
     })
