@@ -15,23 +15,26 @@ fetch(urlDetalleMovie)
         console.log(data);
 
         let detalleMovie = document.querySelector(".section-detalle-Movie")
-        let arrayDetMovie = data.genres
+        let generos = data.genres
         let detalleMovieHTML = ""
 
-        for(let i = 0; i < arrayDetMovie.length; i++){
-            detalleMovieHTML += `<article class= "detalles-serie-informacion">
-            <img class="detalles-Movie-imagen" src= ${data.backdrop_path}>
-            <ul class="detalles-Movie-texto" >
-            <li><h2> Nombre: ${data.name}</h2></li>
-            <li><p> Calificación: ${data.popularity}<p></li>
-            <li><p> Fecha de estreno: ${data.first_air_date}<p></li>
-            <li><p> Sinópsis: ${data.overview}<p></li>
-            <li><h3> Genero: <a class="detalles-Movie-link" href="detalle-generos.html?id=${data.id}">${data.name}</a></h3></li>
-            </ul>`
+        detalleMovieHTML += `<article class= "detalles-serie-informacion">
+        <img class="detalles-Movie-imagen" src= ${data.backdrop_path}>
+        <ul class="detalles-Movie-texto" >
+        <li><h2> Nombre: ${data.name}</h2></li>
+        <li><p> Calificación: ${data.popularity}<p></li>
+        <li><p> Fecha de estreno: ${data.first_air_date}<p></li>
+        <li><p> Sinópsis: ${data.overview}<p></li>
+        <li><h3 id="listaGeneros"> Genero: </h3></li>
+        </ul>`
+        detalleMovie.innerHTML = detallemovieHTML;
+        let listaGeneros = document.querySelector("#listaGeneros")
+        console.log(listaGeneros)
+        for(let i = 0; i < generos.length; i++){
+            console.log(generos[i]);
+            listaGeneros.innerHTML += `<a class="detalles-Movie-link" href="detalle-generos.html?id=${generos[i].id}">${generos[i].name}</a>`
         }
 
-        detalleMovie.innerHTML = detallenMovieHTML;
-        
 
     })
     .catch(function (error) {
