@@ -27,7 +27,7 @@ fetch(urlDetalleMovie)
         <li><p> Sinópsis: ${data.overview}<p></li>
         <li><h3 id="listaGeneros"> Genero: </h3></li>
         </ul>`
-        detalleMovie.innerHTML = detallemovieHTML;
+        detalleMovie.innerHTML = detalleMovieHTML;
         let listaGeneros = document.querySelector("#listaGeneros")
         console.log(listaGeneros)
         for(let i = 0; i < generos.length; i++){
