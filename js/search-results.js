@@ -17,7 +17,7 @@ fetch(urlBuscador)
         for (let i = 0; i < data.lenght; i++){
             contenido +=`<article class = "resultados" >
                         <p class = "titulo-busqueda">
-                        <a class = "search-results" href = "detalle-movie.html?//COMPLETAR//
+                        <a class = "search-results" href = "detalle-movie.html?
                         
                         </a>
                         </p>
@@ -25,10 +25,6 @@ fetch(urlBuscador)
             `
         }
         
-        resultados.innerHTML += contenido
-        if(j)
-
-        resultados.innerHTML = contenido
      })
     .catch(function(error){
         console.log("Error: " + error);
