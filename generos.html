@@ -25,13 +25,13 @@
         </nav>
     </header>
 
-    <section>
-        <h2>Películas</h2>
+    <section class="lista-generos">
+        <h2 class="titulo">Películas</h2>
         <ul class="genero-section"></ul>
     </section>
 
-    <section>
-        <h2>Series</h2>
+    <section class="lista-generos">
+        <h2 class="titulo">Series</h2>
         <ul class="genero-section-tv"></ul>
     </section>
 
@@ -46,53 +46,3 @@
     <script src="js/genero.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-fetch(urlGeneroDetalleTV)
-.then(function(response){
-    return response.json()
-})
-.then(function(data){
-    console.log(data);
-
-    let detallesGenero= document.querySelector(".serie-detalle-genero");
-    let arrayDetallesGenero= data.results
-    let detallesGeneroHTML= ''
-
-    for(let i=0; i<arrayDetallesGenero.length; i++){
-        detallesGeneroHTML += `<article class="home-article">
-        <a class="link-color" href="detalle-serie.html?id=${arrayDetallesGenero[i].id}">
-        <img src=${arrayDetallesGenero[i].poster_path}>
-        <h3 class="home-texto" >${arrayDetallesGenero[i].name}</h3></a>
-        </article>`
-    }
-    detallesGenero.innerHTML= detallesGeneroHTML;
-
-})
-.catch(function(error){
-    console.log("Error: " + error);
-})
-
-
-let generos= document.querySelector (".genero-section");
-    let arrayGeneros = data.genres
-    let generosHTML= ""
-    
-    for(let i=0;i<arrayGeneros.length;i++){
-         generosHTML += `
-         <article class= "home-article">
-         <a class="link-color" href="detalle-generos.html?id=${arrayGeneros[i].id}">
-         <img src= ${arrayGeneros[i].m}>
-         <h2 class="home-texto" >${arrayGeneros[i].n}</h2>
-         </a>
-         </article>`
-     }

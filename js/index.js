@@ -17,8 +17,8 @@ fetch(urlPeliculas)
             <article class = "article-lista-movie">
             <a class="enlace-lista-movie" href="detalle-movie.html?id=${arrayPeliculas[i].id}">
             <h2 class="titulo-lista-movie"> ${arrayPeliculas[i].title} </h2>
-            <img src="https://image.tmdb.org/t/p/w500${arrayPeliculas[i].poster_path}" width="400" height="600" alt="${arrayPeliculas[i].title} Poster">
-            <p>${arrayPeliculas[i].release_date}</p>
+            <img class"img_genero" src="https://image.tmdb.org/t/p/w500${arrayPeliculas[i].poster_path}"width="200" height="300" alt="${arrayPeliculas[i].title} Poster">
+            <p class="fecha-genero" >${arrayPeliculas[i].release_date}</p>
             </a>
             </article>
             </li>`
@@ -49,8 +49,8 @@ fetch(urlSeries)
             <article class = "article-lista-movie">
             <a class="enlace-lista-movie" href="detalle-serie.html?id=${arraySeries[i].id}">
             <h2 class="titulo-lista-movie"> ${arraySeries[i].original_name } </h2>
-            <img src="https://image.tmdb.org/t/p/w500${arraySeries[i].poster_path}" width="400" height="600" alt="${arraySeries[i].original_name} Poster">
-            <p>${arraySeries[i].first_air_date}</p>
+            <img src="https://image.tmdb.org/t/p/w500${arraySeries[i].poster_path}" width="200" height="300 alt="${arraySeries[i].original_name} Poster">
+            <p class="fecha-genero">${arraySeries[i].first_air_date}</p>
             </a>
             </article>
             </li>`

@@ -6,11 +6,6 @@ let queryString = location.search
 let queryStringObj = new URLSearchParams(queryString)
 let busqueda = queryStringObj.get("buscar")
 let resultados = document.querySelector('.resultados')
-let contenido = ''
-
-let titulo = document.querySelector('.titulo-busqueda')
-titulo.innerHTML += buscar
-
 
 fetch(urlBuscador)
     .then(function(response){

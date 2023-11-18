@@ -88,15 +88,17 @@ footer{
 
 /**HOME**/
 .padre-articulos {
-    background-color: rgb(103, 93, 103);
+    background-color: white;
     margin: 15px;
     border-radius: 15px;
     padding: 10px;
 }
-.titulo-section {
-    font-size: 24px;
+.titulo-section{
     color: white;
+    background-color: black;
     margin: 15px;
+    border-radius: 15px;
+    padding: 20px;
 }
 .section-home {
     display: flex;
@@ -125,17 +127,48 @@ footer{
     font-size: 14px;
     color: #777;
 }
+.titulo-lista-movie{
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.fecha-genero{
+    color: white;
+    background-color: black;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.article-lista-movie{
+    background-color: purple;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.lista-peliculas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.enlace-lista-movie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lista-series{
+    display: flex;
+    flex-wrap: wrap;
+}
 /**HOME**/
 
 /**GENEROS**/
 /* Estilos generales */
 .genero-section {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    padding: 20px;
-
-    background-color: rgb(103, 93, 103);
+    background-color: purple;
     margin: 15px;
     border-radius: 15px;
     padding: 10px;
@@ -143,16 +176,22 @@ footer{
 
 
 .genero-section-tv {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    padding: 20px;
-
-    background-color: rgb(103, 93, 103);
+    background-color: purple;
     margin: 15px;
     border-radius: 15px;
     padding: 10px;
 }
+.link-color{
+    color: black;
+}
+.titulo{
+    color: white;
+    background-color: black;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
 
 
 /* Estilos para la lista de categoría */
