@@ -14,7 +14,7 @@ fetch(urlDetalleMovie)
     .then(function (data) {
         console.log(data);
 
-        let detalleMovie = document.querySelector(".section-detalle-Movie")
+        let detalleMovie = document.querySelector(".section-detalle-movie")
         let generos = data.genres
         let detalleMovieHTML = ""
 
